@@ -85,7 +85,7 @@ const Footer: React.FC = () => {
               </li>
               <li className="flex items-start gap-3">
                 <MapPin className="w-5 h-5 text-primary-500 mt-1" />
-                <span className="text-neutral-300">Jl. Teknik Elektro No. 123, Surabaya, Indonesia</span>
+                <span className="text-neutral-300">purbalingga</span>
               </li>
               <li className="flex items-start gap-3">
                 <Clock className="w-5 h-5 text-primary-500 mt-1" />
