@@ -1,0 +1,82 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-white dark:bg-dark text-neutral-800 dark:text-neutral-100 font-sans;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-heading font-semibold;
+  }
+}
+
+@layer components {
+  .btn {
+    @apply px-6 py-3 rounded-md font-medium transition-all duration-300 inline-flex items-center gap-2;
+  }
+  
+  .btn-primary {
+    @apply bg-primary-500 hover:bg-primary-600 text-white;
+  }
+  
+  .btn-secondary {
+    @apply bg-secondary-500 hover:bg-secondary-600 text-dark;
+  }
+
+  .btn-outline {
+    @apply border-2 border-primary-500 text-primary-500 hover:bg-primary-500 hover:text-white;
+  }
+
+  .container-custom {
+    @apply container mx-auto px-4 sm:px-6 lg:px-8;
+  }
+
+  .section {
+    @apply py-12 md:py-20;
+  }
+  
+  .card {
+    @apply bg-white dark:bg-neutral-800 rounded-lg shadow-card hover:shadow-card-hover transition-shadow duration-300 overflow-hidden;
+  }
+
+  .nav-link {
+    @apply px-4 py-2 text-neutral-600 dark:text-neutral-300 hover:text-primary-500 dark:hover:text-primary-400 transition-colors duration-300;
+  }
+
+  .nav-link-active {
+    @apply text-primary-500 dark:text-primary-400 font-medium;
+  }
+}
+
+/* Custom animations */
+.hover-up {
+  @apply transition-transform duration-300 hover:-translate-y-1;
+}
+
+/* Animation for service cards */
+.service-card {
+  @apply transition-all duration-300;
+}
+
+.service-card:hover {
+  @apply transform -translate-y-2;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-neutral-100 dark:bg-neutral-800;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-primary-300 dark:bg-primary-600 rounded-full;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  @apply bg-primary-400 dark:bg-primary-500;
+}
